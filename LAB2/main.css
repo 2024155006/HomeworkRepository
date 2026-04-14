@@ -1,0 +1,61 @@
+/* 1. font-family: 전체적인 폰트 설정  */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* 2. background-color: 배경색  */
+}
+
+/* 3. text-align: 제목 및 링크 중앙 정렬  */
+h1 {
+    text-align: center;
+    font-size: 28px; /* 4. font-size: 제목 크기 설정  */
+    margin-top: 50px; /* 5. margin: 여백 설정  */
+}
+
+.nav-links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 6. border: 폼 주변의 검은색 테두리  */
+/* 7. width: 컨테이너 너비 설정  */
+.form-border {
+    border: 2px solid black;
+    width: 450px;
+    margin: 0 auto; /* 중앙 정렬 */
+    padding: 30px; /* 8. padding: 테두리 내부 여백  */
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 8px;
+    color: #333333; /* 9. color: 텍스트 색상  */
+}
+
+/* 버튼 영역 및 공통 스타일 */
+.button-area {
+    text-align: left;
+    margin-top: 20px;
+}
+
+button {
+    height: 35px; /* 10. height: 버튼 높이 설정  */
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* 개별 버튼 색상 설정 (예시 이미지 참조) [cite: 71, 72] */
+.signup-btn, .login-btn {
+    background-color: lightgreen;
+    color: black;
+}
+
+.cancel-btn {
+    background-color: #ff3333;
+    color: white;
+}
