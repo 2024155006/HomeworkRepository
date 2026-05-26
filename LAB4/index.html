@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인프밍 영화 정보 사이트</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div id="wrapper">
+        
+        <header>
+            <h1>인프밍 영화 정보 사이트입니다.</h1>
+            <nav>
+                <a href="index.html" class="active">메인페이지</a>
+                <a href="login.html">로그인</a>
+                <a href="signup.html">회원가입</a>
+            </nav>
+        </header>
+
+        <hr>
+
+        <section class="search-section">
+            <input type="text" id="search-input" placeholder="키워드를 입력하세요.">
+            <button id="search-btn">Filter results</button>
+        </section>
+
+        <div class="content-container">
+            
+            <aside class="sort-sidebar">
+                <h3>정렬 기준</h3>
+                <div class="radio-group">
+                    <label><input type="radio" name="sort" value="rating-desc" checked> 평점 내림차순</label>
+                    <label><input type="radio" name="sort" value="rating-asc"> 평점 오름차순</label>
+                    <label><input type="radio" name="sort" value="date-desc"> 개봉 내림차순</label>
+                    <label><input type="radio" name="sort" value="date-asc"> 개봉 오름차순</label>
+                </div>
+            </aside>
+
+            <main class="movies-main">
+                <h2>Movies</h2>
+                <div id="movie-grid"></div>
+            </main>
+
+        </div>
+    </div>
+
+    <script>
+        let allMovies = [];
+        let filteredMovies = [];
+        let currentIndex = 0;
+        const itemsPerPage = 6;
+
+        async function fetchMovies() {
+            try {
+                const response = await fetch('product.json');
+                if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
+                allMovies = await response.json();
+                filteredMovies = [...allMovies];
+                
+                applySort();
+            } catch (error) {
+                console.error("데이터를 불러오는 중 오류가 발생했습니다:", error);
+            }
+        }
+
+        function loadMoreMovies() {
+            const grid = document.getElementById('movie-grid');
+            const nextBatch = filteredMovies.slice(currentIndex, currentIndex + itemsPerPage);
+
+            if (nextBatch.length === 0) return;
+
+            nextBatch.forEach(movie => {
+                const card = document.createElement('div');
+                card.className = 'movie-card';
+
+                card.innerHTML = `
+                    <div class="poster-container">
+                        <img src="${movie.poster_path}" alt="${movie.title}" onerror="this.src='https://via.placeholder.com/250x370?text=No+Image'">
+                        <div class="overview-overlay">
+                            <strong>줄거리:</strong><br><br>${movie.overview || '줄거리 정보가 없습니다.'}
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h4 class="movie-title">${movie.title}</h4>
+                        <p class="movie-date">📅 ${movie.release_date}</p>
+                        <p class="movie-rating">⭐ ${movie.vote_average}/10</p>
+                    </div>
+                `;
+
+                const overlay = card.querySelector('.overview-overlay');
+                card.addEventListener('mouseenter', () => {
+                    overlay.style.opacity = '1';
+                });
+                card.addEventListener('mouseleave', () => {
+                    overlay.style.opacity = '0';
+                });
+
+                grid.appendChild(card);
+            });
+
+            currentIndex += itemsPerPage;
+        }
+
+        window.addEventListener('scroll', () => {
+            if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 100) {
+                loadMoreMovies();
+            }
+        });
+
+        function applySearch() {
+            const keyword = document.getElementById('search-input').value.trim().toLowerCase();
+            
+            filteredMovies = allMovies.filter(movie => 
+                movie.title.toLowerCase().includes(keyword) ||
+                movie.overview.toLowerCase().includes(keyword)
+            );
+
+            applySort();
+        }
+
+        function applySort() {
+            const sortType = document.querySelector('input[name="sort"]:checked').value;
+
+            if (sortType === 'rating-desc') {
+                filteredMovies.sort((a, b) => b.vote_average - a.vote_average);
+            } else if (sortType === 'rating-asc') {
+                filteredMovies.sort((a, b) => a.vote_average - b.vote_average);
+            } else if (sortType === 'date-desc') {
+                filteredMovies.sort((a, b) => new Date(b.release_date) - new Date(a.release_date));
+            } else if (sortType === 'date-asc') {
+                filteredMovies.sort((a, b) => new Date(a.release_date) - new Date(b.release_date));
+            }
+
+            currentIndex = 0;
+            document.getElementById('movie-grid').innerHTML = '';
+            loadMoreMovies();
+        }
+
+        document.getElementById('search-btn').addEventListener('click', applySearch);
+        document.getElementById('search-input').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') applySearch();
+        });
+        document.querySelectorAll('input[name="sort"]').forEach(radio => {
+            radio.addEventListener('change', applySort);
+        });
+
+        window.onload = fetchMovies;
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인프밍 영화 정보 사이트 - 회원가입</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div id="wrapper">
+        
+        <header>
+            <h1>인프밍 영화 정보 사이트입니다.</h1>
+            <nav>
+                <a href="index.html">메인페이지</a>
+                <a href="login.html">로그인</a>
+                <a href="signup.html" class="active">회원가입</a>
+            </nav>
+        </header>
+
+        <hr>
+
+        <main class="auth-container">
+            <h2>Sign Up</h2>
+            <form id="signup-form" onsubmit="event.preventDefault(); alert('회원가입 기능은 다음 과제에서 구현될 예정입니다!');">
+                <div class="form-group">
+                    <label for="username">사용자 이름 (ID)</label>
+                    <input type="text" id="username" placeholder="아이디를 입력하세요." required>
+                </div>
+                <div class="form-group">
+                    <label for="email">이메일 주소</label>
+                    <input type="email" id="email" placeholder="이메일을 입력하세요." required>
+                </div>
+                <div class="form-group">
+                    <label for="password">비밀번호</label>
+                    <input type="password" id="password" placeholder="비밀번호를 입력하세요." required>
+                </div>
+                <div class="form-group">
+                    <label for="password-confirm">비밀번호 확인</label>
+                    <input type="password" id="password-confirm" placeholder="비밀번호를 다시 입력하세요." required>
+                </div>
+                <button type="submit" class="auth-btn">회원가입 완료</button>
+            </form>
+            <div class="auth-footer">
+                <p>이미 계정이 있으신가요? <a href="login.html">로그인하기</a></p>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>

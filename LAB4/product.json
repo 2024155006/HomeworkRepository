@@ -1,0 +1,170 @@
+[
+  {
+    "title": "Toy Story",
+    "release_date": "1995-10-30",
+    "vote_average": 7.7,
+    "poster_path": "https://image.tmdb.org/t/p/original/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
+    "overview": "Led by Woody, Andy's toys live happily in his room until Buzz Lightyear arrives and changes everything."
+  },
+  {
+    "title": "Jumanji",
+    "release_date": "1995-12-15",
+    "vote_average": 6.9,
+    "poster_path": "https://image.tmdb.org/t/p/w440_and_h660_face/vgpXmVaVyUL7GGiDeiK1mKEKzcX.jpg",
+    "overview": "Two kids discover a magical board game that releases a man trapped for decades and brings jungle dangers into the real world."
+  },
+  {
+    "title": "The Dark Knight",
+    "release_date": "2008-07-18",
+    "vote_average": 8.5,
+    "poster_path": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    "overview": "Batman faces the Joker, a criminal mastermind who pushes Gotham City and its heroes into chaos."
+  },
+  {
+    "title": "Inception",
+    "release_date": "2010-07-16",
+    "vote_average": 8.4,
+    "poster_path": "https://image.tmdb.org/t/p/w500/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg",
+    "overview": "A skilled thief enters dreams to steal secrets, then takes on the risky mission of planting an idea inside a mind."
+  },
+  {
+    "title": "Interstellar",
+    "release_date": "2014-11-07",
+    "vote_average": 8.4,
+    "poster_path": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+    "overview": "A team of explorers travels through a wormhole in search of a new home for humanity."
+  },
+  {
+    "title": "Parasite",
+    "release_date": "2019-05-30",
+    "vote_average": 8.5,
+    "poster_path": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+    "overview": "A poor family becomes entangled with a wealthy household, exposing sharp conflicts of class and survival."
+  },
+  {
+    "title": "La La Land",
+    "release_date": "2016-12-09",
+    "vote_average": 7.9,
+    "poster_path": "https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+    "overview": "An aspiring actress and a jazz musician fall in love while chasing difficult dreams in Los Angeles."
+  },
+  {
+    "title": "Whiplash",
+    "release_date": "2014-10-10",
+    "vote_average": 8.4,
+    "poster_path": "https://image.tmdb.org/t/p/w500/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
+    "overview": "A young drummer enrolls at a top music conservatory and clashes with a ruthless instructor."
+  },
+  {
+    "title": "The Matrix",
+    "release_date": "1999-03-31",
+    "vote_average": 8.2,
+    "poster_path": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+    "overview": "A hacker discovers that reality is a simulation and joins a rebellion against machine control."
+  },
+  {
+    "title": "Spirited Away",
+    "release_date": "2001-07-20",
+    "vote_average": 8.5,
+    "poster_path": "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+    "overview": "A young girl enters a mysterious spirit world and must find courage to save her parents."
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "release_date": "1994-09-23",
+    "vote_average": 8.7,
+    "poster_path": "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
+    "overview": "A banker sentenced to prison forms a deep friendship while holding onto hope and dignity."
+  },
+  {
+    "title": "Forrest Gump",
+    "release_date": "1994-07-06",
+    "vote_average": 8.5,
+    "poster_path": "https://image.tmdb.org/t/p/w500/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
+    "overview": "Forrest Gump moves through decades of American history with innocence, luck, and devotion."
+  },
+  {
+    "title": "The Godfather",
+    "release_date": "1972-03-24",
+    "vote_average": 8.7,
+    "poster_path": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+    "overview": "The aging head of a powerful crime family transfers control to his reluctant son."
+  },
+  {
+    "title": "Pulp Fiction",
+    "release_date": "1994-10-14",
+    "vote_average": 8.5,
+    "poster_path": "https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
+    "overview": "Multiple crime stories collide in Los Angeles through sharp dialogue and unexpected violence."
+  },
+  {
+    "title": "Fight Club",
+    "release_date": "1999-10-15",
+    "vote_average": 8.4,
+    "poster_path": "https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+    "overview": "An office worker and a soap maker create an underground fight club that grows into something dangerous."
+  },
+  {
+    "title": "Avengers: Endgame",
+    "release_date": "2019-04-26",
+    "vote_average": 8.3,
+    "poster_path": "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+    "overview": "The surviving Avengers attempt one final mission to undo the devastation caused by Thanos."
+  },
+  {
+    "title": "Coco",
+    "release_date": "2017-11-22",
+    "vote_average": 8.2,
+    "poster_path": "https://image.tmdb.org/t/p/w500/gGEsBPAijhVUFoiNpgZXqRVWJt2.jpg",
+    "overview": "A boy who dreams of becoming a musician journeys into the Land of the Dead to uncover his family's story."
+  },
+  {
+    "title": "Inside Out",
+    "release_date": "2015-06-19",
+    "vote_average": 7.9,
+    "poster_path": "https://image.tmdb.org/t/p/w500/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg",
+    "overview": "Inside a young girl's mind, her emotions struggle to guide her through a difficult move."
+  },
+  {
+    "title": "Up",
+    "release_date": "2009-05-29",
+    "vote_average": 8.0,
+    "poster_path": "https://image.tmdb.org/t/p/w500/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg",
+    "overview": "An elderly widower ties balloons to his house and sets off on an adventure with an unexpected young companion."
+  },
+  {
+    "title": "Your Name",
+    "release_date": "2016-08-26",
+    "vote_average": 8.5,
+    "poster_path": "https://image.tmdb.org/t/p/w500/q719jXXEzOoYaps6babgKnONONX.jpg",
+    "overview": "Two teenagers mysteriously swap bodies and form a connection across distance and time."
+  },
+  {
+    "title": "The Social Network",
+    "release_date": "2010-10-01",
+    "vote_average": 7.4,
+    "poster_path": "https://image.tmdb.org/t/p/w500/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg",
+    "overview": "The founding of Facebook brings ambition, lawsuits, and fractured friendships."
+  },
+  {
+    "title": "Mad Max: Fury Road",
+    "release_date": "2015-05-15",
+    "vote_average": 7.6,
+    "poster_path": "https://image.tmdb.org/t/p/w500/hA2ple9q4qnwxp3hKVNhroipsir.jpg",
+    "overview": "In a wasteland ruled by tyranny, Max and Furiosa race across the desert to seek freedom."
+  },
+  {
+    "title": "Black Panther",
+    "release_date": "2018-02-16",
+    "vote_average": 7.4,
+    "poster_path": "https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+    "overview": "T'Challa returns to Wakanda as king and faces a challenger who threatens his nation's future."
+  },
+  {
+    "title": "Frozen",
+    "release_date": "2013-11-27",
+    "vote_average": 7.3,
+    "poster_path": "https://image.tmdb.org/t/p/w500/kgwjIb2JDHRhNk13lmSxiClFjVk.jpg",
+    "overview": "A fearless princess sets out to find her sister, whose icy powers have trapped their kingdom in winter."
+  }
+]
